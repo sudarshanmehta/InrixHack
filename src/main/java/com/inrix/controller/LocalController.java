@@ -56,9 +56,9 @@ public class LocalController {
        restaurantResponses.sort(new Comparator<RestaurantResponse>() {
            @Override
            public int compare(RestaurantResponse o1, RestaurantResponse o2) {
-               if(o1.getFrequency_score() > o2.getFrequency_score())
+               if(o1.getComposite_score() > o2.getComposite_score())
                    return -1;
-               else if(o1.getFrequency_score() < o2.getFrequency_score())
+               else if(o1.getComposite_score() < o2.getComposite_score())
                    return 1;
                else
                    return 0;
